@@ -1,0 +1,88 @@
+@font-face {
+    font-family: ipixelu;
+    src: url(../I-pixel-u.ttf);
+}
+@font-face {
+    font-family: pixelade;
+    src: url(../PIXELADE.TTF);
+}
+:root{
+    --menuBox: rgb(26, 19, 92);
+    --menuBorder: 10px, ridge, rgb(163, 163, 163);
+}
+
+*{
+    font-family: ipixelu, monospace;
+    color: white;
+    
+}
+
+body{
+    background-image: url(../img/background_img_orng_blu.jpeg);
+    background-size: cover;
+}
+
+header{
+    font-size: 50px;
+    padding: 20px;
+    background-color: var(--menuBox);
+    border: var(--menuBorder);
+}
+
+section{
+    border: 15px, inset, rgb(163, 163, 163);;
+    display: block;
+    background-color: bisque;
+    width: 65%;;
+    margin: auto;
+    padding: 20px;
+}
+.vl{
+    display: inline;
+    border-left: 6px solid gray;
+    height: 60px;
+}
+section h2{
+    display: inline;
+    width: min-content;
+    font-size: 44px;
+    color: gray;
+}
+section p{
+    font-family: pixelade;
+    font-size: x-large;
+    padding: 20px;
+    text-align: left;
+    display: inline;
+    width: 40%;
+}
+nav{
+    position: fixed;
+    bottom: 40px;
+    width: 200px;
+    background-color: var(--menuBox);
+    border: var(--menuBorder);
+    border-radius: 5%;
+}
+li{
+    list-style-type: none;
+    font-size: larger;
+    padding:10px 10px 10px 10px;
+}
+li a{
+    width: 100%;
+    background-color: var(--menuBox);
+}
+
+li:hover{
+    list-style-type: disc; /* TODO: ADD CUSTOM TRIANGLE SHAPE BULLET FOR MENU */
+}
+
+footer{
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    padding: 20px;
+    background-color: var(--menuBox);
+    border: var(--menuBorder);
+}
