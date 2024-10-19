@@ -7,8 +7,9 @@
     src: url(../PIXELADE.TTF);
 }
 :root{
-    --menuBox: rgb(26, 19, 92);
-    --menuBorder: 10px, ridge, rgb(163, 163, 163);
+    --menuBox: linear-gradient(rgb(14, 14, 163),rgb(26, 19, 92));
+    --menuBorder: 10px, ridge, rgb(238, 238, 238);
+    --HPBar: 98%;
 }
 
 *{
@@ -25,16 +26,34 @@ body{
 header{
     font-size: 50px;
     padding: 20px;
-    background-color: var(--menuBox);
+    background-image: var(--menuBox);
     border: var(--menuBorder);
 }
-
+h1{
+    display: inline;
+}
+#healthbar{
+    display: inline-block;
+    width: 50%;
+    height: 25px;
+    background-color: grey;
+    border-radius: 40px;
+}
+#healthRemains{
+    position: relative;
+    top: 2px;
+    left: 1%;
+    width: var(--HPBar);
+    height: 20px;
+    background-color: red;
+    border-radius: 40px;
+}
 section{
     border: 15px, inset, rgb(163, 163, 163);;
     display: block;
     background-color: bisque;
     width: 65%;;
-    margin: auto;
+    margin: 20px auto 0px auto;
     padding: 20px;
 }
 .vl{
@@ -49,6 +68,7 @@ section h2{
     color: gray;
 }
 section p{
+    color: black;
     font-family: pixelade;
     font-size: x-large;
     padding: 20px;
@@ -60,7 +80,7 @@ nav{
     position: fixed;
     bottom: 40px;
     width: 200px;
-    background-color: var(--menuBox);
+    background-image: var(--menuBox);
     border: var(--menuBorder);
     border-radius: 5%;
 }
@@ -71,7 +91,7 @@ li{
 }
 li a{
     width: 100%;
-    background-color: var(--menuBox);
+    background-image: var(--menuBox);
 }
 
 li:hover{
@@ -83,6 +103,6 @@ footer{
     width: 100%;
     bottom: 0;
     padding: 20px;
-    background-color: var(--menuBox);
+    background-image: var(--menuBox);
     border: var(--menuBorder);
 }
